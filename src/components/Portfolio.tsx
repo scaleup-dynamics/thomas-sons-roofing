@@ -69,7 +69,7 @@ export default function Portfolio() {
           {(['All', 'Residential', 'Commercial'] as Filter[]).map((tab) => (
             <button key={tab} onClick={() => setFilter(tab)}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 ${
-                filter === tab ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/30' : 'glass text-charcoal-300 hover:text-white hover:border-charcoal-600'
+                filter === tab ? 'bg-accent-400 text-charcoal-950 shadow-lg shadow-accent-500/30' : 'glass text-charcoal-300 hover:text-white hover:border-charcoal-600'
               }`}
             >
               {tab === 'Residential' && <Home className="w-4 h-4" />}
@@ -158,7 +158,7 @@ export default function Portfolio() {
               <button
                 onClick={(e) => { e.stopPropagation(); setXrayMode(!xrayMode); }}
                 className={`absolute top-4 left-4 z-20 flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-mono font-medium transition-all duration-300 ${
-                  xrayMode ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/40' : 'glass-dark text-charcoal-300 hover:text-white'
+                  xrayMode ? 'bg-accent-400 text-charcoal-950 shadow-lg shadow-accent-500/40' : 'glass-dark text-charcoal-300 hover:text-white'
                 }`}
               >
                 <Eye className="w-4 h-4" />
@@ -166,11 +166,11 @@ export default function Portfolio() {
               </button>
 
               <button onClick={(e) => { e.stopPropagation(); setLightbox((p) => p === null ? p : (p - 1 + filtered.length) % filtered.length); }}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl glass-dark text-white flex items-center justify-center hover:bg-primary-500 transition-colors">
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl glass-dark text-white flex items-center justify-center hover:bg-accent-400 hover:text-charcoal-950 transition-colors">
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button onClick={(e) => { e.stopPropagation(); setLightbox((p) => p === null ? p : (p + 1) % filtered.length); }}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl glass-dark text-white flex items-center justify-center hover:bg-primary-500 transition-colors">
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl glass-dark text-white flex items-center justify-center hover:bg-accent-400 hover:text-charcoal-950 transition-colors">
                 <ChevronRight className="w-5 h-5" />
               </button>
             </div>

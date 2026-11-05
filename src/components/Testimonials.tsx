@@ -106,15 +106,15 @@ export default function Testimonials() {
                 <div className="flex gap-2">
                   {testimonials.map((_, i) => (
                     <button key={i} onClick={() => { setActive(i); setFadeKey((k) => k + 1); }}
-                      className={`h-2.5 rounded-full transition-all duration-300 ${i === active ? 'w-10 bg-primary-500' : 'w-2.5 bg-charcoal-700 hover:bg-charcoal-600'}`}
+                      className={`h-2.5 rounded-full transition-all duration-300 ${i === active ? 'w-10 bg-accent-400' : 'w-2.5 bg-charcoal-700 hover:bg-charcoal-600'}`}
                       aria-label={`Go to testimonial ${i + 1}`} />
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <button onClick={prev} className="w-11 h-11 rounded-xl glass-dark hover:bg-primary-500 text-white flex items-center justify-center transition-all duration-300 hover:scale-105" aria-label="Previous">
+                  <button onClick={prev} className="w-11 h-11 rounded-xl glass-dark hover:bg-accent-400 hover:text-charcoal-950 text-white flex items-center justify-center transition-all duration-300 hover:scale-105" aria-label="Previous">
                     <ChevronLeft className="w-5 h-5" />
                   </button>
-                  <button onClick={next} className="w-11 h-11 rounded-xl glass-dark hover:bg-primary-500 text-white flex items-center justify-center transition-all duration-300 hover:scale-105" aria-label="Next">
+                  <button onClick={next} className="w-11 h-11 rounded-xl glass-dark hover:bg-accent-400 hover:text-charcoal-950 text-white flex items-center justify-center transition-all duration-300 hover:scale-105" aria-label="Next">
                     <ChevronRight className="w-5 h-5" />
                   </button>
                 </div>

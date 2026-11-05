@@ -30,12 +30,12 @@ export default function Footer() {
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-500/30">
-                <Home className="w-5 h-5 text-white" strokeWidth={2.5} />
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-accent-300 to-accent-500 flex items-center justify-center shadow-lg shadow-accent-500/30">
+                <Home className="w-5 h-5 text-charcoal-950" strokeWidth={2.5} />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-display font-extrabold text-xl text-white">
-                  Thomas <span className="text-primary-400">&amp; Sons</span>
+                  Thomas <span className="text-accent-300">&amp; Sons</span>
                 </span>
                 <span className="text-[10px] text-charcoal-500 font-mono tracking-widest uppercase mt-0.5">
                   Roofing &amp; Construction
@@ -55,7 +55,7 @@ export default function Footer() {
                   onChange={(e) => setEmail(e.target.value)} placeholder="Your email"
                   className="flex-1 px-4 py-2.5 rounded-xl bg-charcoal-950/60 border border-charcoal-800 text-white text-sm placeholder-charcoal-500 focus:outline-none focus:border-primary-500 focus:shadow-[0_0_15px_rgba(11,138,240,0.15)] transition-all" />
                 <button type="submit"
-                  className="px-4 py-2.5 rounded-xl bg-primary-500 hover:bg-primary-600 text-white transition-colors flex items-center justify-center">
+                  className="px-4 py-2.5 rounded-xl bg-accent-400 hover:bg-accent-300 text-charcoal-950 transition-colors flex items-center justify-center">
                   <Send className="w-4 h-4" />
                 </button>
               </form>
@@ -64,13 +64,13 @@ export default function Footer() {
 
             <div className="flex gap-3">
               <a href={site.facebookUrl} target="_blank" rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg glass-titanium hover:bg-primary-500 border border-charcoal-700/50 hover:border-primary-500 flex items-center justify-center text-charcoal-300 hover:text-white transition-all duration-300"
+                className="w-10 h-10 rounded-lg glass-titanium hover:bg-accent-400 border border-charcoal-700/50 hover:border-accent-400 flex items-center justify-center text-charcoal-300 hover:text-charcoal-950 transition-all duration-300"
                 aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
               {[Instagram, Youtube].map((Icon, i) => (
                 <a key={i} href="#"
-                  className="w-10 h-10 rounded-lg glass-titanium hover:bg-primary-500 border border-charcoal-700/50 hover:border-primary-500 flex items-center justify-center text-charcoal-300 hover:text-white transition-all duration-300">
+                  className="w-10 h-10 rounded-lg glass-titanium hover:bg-accent-400 border border-charcoal-700/50 hover:border-accent-400 flex items-center justify-center text-charcoal-300 hover:text-charcoal-950 transition-all duration-300">
                   <Icon className="w-5 h-5" />
                 </a>
               ))}
@@ -84,7 +84,7 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {items.map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-sm text-charcoal-400 hover:text-primary-400 transition-colors">{item}</a>
+                      <a href="#" className="text-sm text-charcoal-400 hover:text-accent-300 transition-colors">{item}</a>
                     </li>
                   ))}
                 </ul>
@@ -96,20 +96,20 @@ export default function Footer() {
             <h4 className="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">Contact</h4>
             <div className="space-y-3">
               <a href={`tel:${site.phoneHref}`} className="flex items-center gap-2.5 text-sm text-charcoal-400 hover:text-white transition-colors">
-                <div className="w-8 h-8 rounded-lg glass border border-primary-500/20 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-4 h-4 text-primary-400" />
+                <div className="w-8 h-8 rounded-lg glass border border-accent-500/30 flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-4 h-4 text-accent-300" />
                 </div>
                 {site.phone}
               </a>
               <a href={`mailto:${site.email}`} className="flex items-center gap-2.5 text-sm text-charcoal-400 hover:text-white transition-colors break-all">
-                <div className="w-8 h-8 rounded-lg glass border border-primary-500/20 flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-4 h-4 text-primary-400" />
+                <div className="w-8 h-8 rounded-lg glass border border-accent-500/30 flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-4 h-4 text-accent-300" />
                 </div>
                 {site.email}
               </a>
               <a href={site.mapUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-sm text-charcoal-400 hover:text-white transition-colors">
-                <div className="w-8 h-8 rounded-lg glass border border-primary-500/20 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-4 h-4 text-primary-400" />
+                <div className="w-8 h-8 rounded-lg glass border border-accent-500/30 flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-4 h-4 text-accent-300" />
                 </div>
                 6289 Independence Pkwy<br />Plano, TX 75023
               </a>

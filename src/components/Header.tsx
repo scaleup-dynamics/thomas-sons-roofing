@@ -62,12 +62,12 @@ export default function Header() {
       >
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-500/30 group-hover:scale-110 transition-transform duration-300">
-              <Home className="w-5 h-5 text-white" strokeWidth={2.5} />
+            <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-accent-300 to-accent-500 flex items-center justify-center shadow-lg shadow-accent-500/30 group-hover:scale-110 transition-transform duration-300">
+              <Home className="w-5 h-5 text-charcoal-950" strokeWidth={2.5} />
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-display font-extrabold text-xl text-white tracking-tight">
-                Thomas <span className="text-primary-400">&amp; Sons</span>
+                Thomas <span className="text-accent-300">&amp; Sons</span>
               </span>
               <span className="text-[10px] text-charcoal-500 font-mono tracking-widest uppercase mt-0.5">
                 Roofing &amp; Construction
@@ -81,7 +81,7 @@ export default function Header() {
                 className="text-sm font-medium text-charcoal-200 hover:text-white transition-colors relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-1.5 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-400 to-accent-400 group-hover:w-full transition-all duration-300 rounded-full" />
+                <span className="absolute -bottom-1.5 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-300 to-accent-500 group-hover:w-full transition-all duration-300 rounded-full" />
               </a>
             ))}
           </nav>
@@ -90,8 +90,8 @@ export default function Header() {
             <a href={`tel:${site.phoneHref}`}
               className="flex items-center gap-2.5 text-sm text-charcoal-200 hover:text-white transition-colors"
             >
-              <div className="w-9 h-9 rounded-lg glass border border-primary-500/20 flex items-center justify-center">
-                <Phone className="w-4 h-4 text-primary-400" />
+              <div className="w-9 h-9 rounded-lg glass border border-accent-500/30 flex items-center justify-center">
+                <Phone className="w-4 h-4 text-accent-300" />
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="text-[10px] text-charcoal-500 uppercase tracking-wider font-mono">Call Us</span>
@@ -99,7 +99,7 @@ export default function Header() {
               </div>
             </a>
             <a href="#contact"
-              className="group relative px-6 py-3 rounded-xl overflow-hidden bg-primary-500 text-white text-sm font-semibold transition-all duration-300 shadow-lg shadow-primary-500/30 hover:shadow-primary-500/60 hover:-translate-y-0.5 border-beam"
+              className="group relative px-6 py-3 rounded-xl overflow-hidden bg-gradient-to-r from-accent-300 to-accent-400 text-charcoal-950 text-sm font-bold transition-all duration-300 shadow-lg shadow-accent-500/25 hover:shadow-accent-500/50 hover:-translate-y-0.5 border-beam"
             >
               <span className="relative z-10 flex items-center gap-1.5">
                 Free Inspection
@@ -123,7 +123,7 @@ export default function Header() {
               </a>
             ))}
             <a href="#contact" onClick={() => setOpen(false)}
-              className="mt-3 px-5 py-3.5 rounded-xl bg-primary-500 text-white text-center font-semibold shadow-lg shadow-primary-500/30"
+              className="mt-3 px-5 py-3.5 rounded-xl bg-accent-400 text-charcoal-950 text-center font-bold shadow-lg shadow-accent-500/25"
             >
               Request Free Inspection
             </a>

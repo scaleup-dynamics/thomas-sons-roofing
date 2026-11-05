@@ -37,7 +37,7 @@ function CountdownClock({ active, hours, mins }: { active: boolean; hours: numbe
 
   return (
     <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-mono text-xs transition-all duration-300 ${
-      active ? 'bg-primary-500/15 border border-primary-500/30 text-primary-300' : 'bg-charcoal-800/50 text-charcoal-600 border border-charcoal-700/30'
+      active ? 'bg-accent-500/15 border border-accent-500/30 text-accent-300' : 'bg-charcoal-800/50 text-charcoal-600 border border-charcoal-700/30'
     }`}>
       <span className={active ? 'text-success-400' : 'text-charcoal-700'}>●</span>
       <span className="font-bold">{String(displayHours).padStart(2, '0')}h</span>
@@ -83,24 +83,24 @@ export default function Process() {
                     {/* Radar pulse on active */}
                     {isActive && (
                       <>
-                        <div className="absolute inset-0 rounded-full bg-primary-500/20 animate-ripple" />
-                        <div className="absolute inset-0 rounded-full bg-primary-500/10 animate-ripple" style={{ animationDelay: '0.5s' }} />
+                        <div className="absolute inset-0 rounded-full bg-accent-500/20 animate-ripple" />
+                        <div className="absolute inset-0 rounded-full bg-accent-500/10 animate-ripple" style={{ animationDelay: '0.5s' }} />
                       </>
                     )}
                     <div className={`absolute inset-0 rounded-full border transition-all duration-300 ${
-                      isActive ? 'border-primary-500/50 bg-primary-500/5' : 'glass border-charcoal-700/50'
+                      isActive ? 'border-accent-500/50 bg-accent-500/5' : 'glass border-charcoal-700/50'
                     }`} />
                     {/* Radar icon */}
                     {isActive && (
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary-400 animate-spin-slow opacity-50">
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-accent-400 animate-spin-slow opacity-50">
                         <Radar className="w-20 h-20" />
                       </div>
                     )}
                     <div className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${isActive ? 'scale-110' : ''}`}>
-                      <Icon className={`w-8 h-8 transition-colors ${isActive ? 'text-primary-400' : 'text-charcoal-400'}`} />
+                      <Icon className={`w-8 h-8 transition-colors ${isActive ? 'text-accent-300' : 'text-charcoal-400'}`} />
                     </div>
-                    <div className={`absolute -top-1 -right-1 w-7 h-7 rounded-full text-white text-xs font-bold flex items-center justify-center shadow-lg transition-all duration-300 ${
-                      isActive ? 'bg-primary-500 shadow-primary-500/40' : 'bg-charcoal-700'
+                    <div className={`absolute -top-1 -right-1 w-7 h-7 rounded-full text-xs font-bold flex items-center justify-center shadow-lg transition-all duration-300 ${
+                      isActive ? 'bg-accent-400 shadow-accent-500/40 text-charcoal-950' : 'bg-charcoal-700 text-white'
                     }`}>
                       {i + 1}
                     </div>
@@ -108,7 +108,7 @@ export default function Process() {
                   <h3 className={`font-display font-bold text-lg mb-2 transition-colors ${isActive ? 'text-white' : 'text-charcoal-300'}`}>{step.title}</h3>
                   <p className="text-sm text-charcoal-400 leading-relaxed mb-3">{step.description}</p>
                   <div className="flex flex-col items-center gap-2">
-                    <span className="inline-block px-3 py-1 rounded-full bg-primary-500/10 border border-primary-500/20 text-xs font-medium text-primary-300 font-mono">{step.duration}</span>
+                    <span className="inline-block px-3 py-1 rounded-full bg-accent-500/10 border border-accent-500/20 text-xs font-medium text-accent-300 font-mono">{step.duration}</span>
                     <CountdownClock active={isActive} hours={step.hours} mins={step.mins} />
                   </div>
                 </div>
@@ -127,18 +127,18 @@ export default function Process() {
                 <div className="flex gap-5 group cursor-pointer" onMouseEnter={() => setActive(i)} onClick={() => setActive(i)}>
                   <div className="flex flex-col items-center">
                     <div className="relative w-16 h-16 flex-shrink-0">
-                      {isActive && <div className="absolute inset-0 rounded-2xl bg-primary-500/20 animate-ripple" />}
-                      <div className={`absolute inset-0 rounded-2xl flex items-center justify-center border transition-all ${isActive ? 'border-primary-500/40 bg-primary-500/5' : 'glass border-charcoal-700/50'}`}>
-                        <Icon className={`w-7 h-7 transition-colors ${isActive ? 'text-primary-400' : 'text-charcoal-400'}`} />
+                      {isActive && <div className="absolute inset-0 rounded-2xl bg-accent-500/20 animate-ripple" />}
+                      <div className={`absolute inset-0 rounded-2xl flex items-center justify-center border transition-all ${isActive ? 'border-accent-500/40 bg-accent-500/5' : 'glass border-charcoal-700/50'}`}>
+                        <Icon className={`w-7 h-7 transition-colors ${isActive ? 'text-accent-300' : 'text-charcoal-400'}`} />
                       </div>
-                      <div className={`absolute -top-1 -right-1 w-6 h-6 rounded-full text-white text-xs font-bold flex items-center justify-center ${isActive ? 'bg-primary-500' : 'bg-charcoal-700'}`}>{i + 1}</div>
+                      <div className={`absolute -top-1 -right-1 w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center ${isActive ? 'bg-accent-400 text-charcoal-950' : 'bg-charcoal-700 text-white'}`}>{i + 1}</div>
                     </div>
                     {i < steps.length - 1 && <div className="w-0.5 h-full bg-charcoal-800 mt-3 flex-1 min-h-[40px]" />}
                   </div>
                   <div className="pb-4">
                     <div className="flex items-center gap-3 mb-2 flex-wrap">
                       <h3 className={`font-display font-bold text-lg ${isActive ? 'text-white' : 'text-charcoal-300'}`}>{step.title}</h3>
-                      <span className="px-2.5 py-0.5 rounded-full bg-primary-500/10 border border-primary-500/20 text-xs font-medium text-primary-300 font-mono">{step.duration}</span>
+                      <span className="px-2.5 py-0.5 rounded-full bg-accent-500/10 border border-accent-500/20 text-xs font-medium text-accent-300 font-mono">{step.duration}</span>
                     </div>
                     <p className="text-sm text-charcoal-400 leading-relaxed">{step.description}</p>
                   </div>

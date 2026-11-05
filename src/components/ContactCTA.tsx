@@ -133,16 +133,16 @@ export default function ContactCTA() {
 
             {/* Contact info cards */}
             <div className="mt-10 pt-8 border-t border-charcoal-800/40 grid sm:grid-cols-2 gap-4">
-              <a href={`tel:${site.phoneHref}`} className="glass-titanium rounded-2xl p-5 hover:border-primary-500/30 transition-colors group">
-                <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <Phone className="w-5 h-5 text-primary-400" />
+              <a href={`tel:${site.phoneHref}`} className="glass-titanium rounded-2xl p-5 hover:border-accent-400/40 transition-colors group">
+                <div className="w-10 h-10 rounded-xl bg-accent-500/10 border border-accent-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <Phone className="w-5 h-5 text-accent-300" />
                 </div>
                 <div className="text-xs text-charcoal-500 uppercase tracking-wider font-mono">Call Us</div>
                 <div className="text-white font-semibold mt-0.5">{site.phone}</div>
               </a>
-              <a href={`mailto:${site.email}`} className="glass-titanium rounded-2xl p-5 hover:border-primary-500/30 transition-colors group">
-                <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <Mail className="w-5 h-5 text-primary-400" />
+              <a href={`mailto:${site.email}`} className="glass-titanium rounded-2xl p-5 hover:border-accent-400/40 transition-colors group">
+                <div className="w-10 h-10 rounded-xl bg-accent-500/10 border border-accent-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <Mail className="w-5 h-5 text-accent-300" />
                 </div>
                 <div className="text-xs text-charcoal-500 uppercase tracking-wider font-mono">Email Us</div>
                 <div className="text-white font-semibold mt-0.5">{site.email}</div>
@@ -151,10 +151,10 @@ export default function ContactCTA() {
                 href={site.mapUrl || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-titanium rounded-2xl p-5 hover:border-primary-500/30 transition-colors group block"
+                className="glass-titanium rounded-2xl p-5 hover:border-accent-400/40 transition-colors group block"
               >
-                <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <MapPin className="w-5 h-5 text-primary-400" />
+                <div className="w-10 h-10 rounded-xl bg-accent-500/10 border border-accent-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <MapPin className="w-5 h-5 text-accent-300" />
                 </div>
                 <div className="text-xs text-charcoal-500 uppercase tracking-wider font-mono flex items-center justify-between">
                   <span>Service Area / Location</span>
@@ -163,8 +163,8 @@ export default function ContactCTA() {
                 <div className="text-white font-semibold mt-0.5">{site.serviceArea}</div>
               </a>
               <div className="glass-titanium rounded-2xl p-5">
-                <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center mb-3">
-                  <Clock className="w-5 h-5 text-primary-400" />
+                <div className="w-10 h-10 rounded-xl bg-accent-500/10 border border-accent-500/20 flex items-center justify-center mb-3">
+                  <Clock className="w-5 h-5 text-accent-300" />
                 </div>
                 <div className="text-xs text-charcoal-500 uppercase tracking-wider font-mono">Hours</div>
                 <div className="text-white font-semibold mt-0.5">{site.hours}</div>
@@ -189,7 +189,7 @@ export default function ContactCTA() {
                       {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-accent-400 fill-accent-400" />)}
                     </div>
                     <button onClick={() => setStatus('idle')}
-                      className="px-6 py-3 rounded-xl glass border border-charcoal-700 hover:border-primary-500/30 text-white font-medium transition-colors"
+                      className="px-6 py-3 rounded-xl glass border border-charcoal-700 hover:border-accent-400/50 hover:text-accent-300 text-white font-medium transition-colors"
                     >
                       Submit Another Request
                     </button>
@@ -243,7 +243,7 @@ export default function ContactCTA() {
                             onClick={() => setForm({ ...form, propertyType: type })}
                             className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
                               form.propertyType === type
-                                ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/30'
+                                ? 'bg-accent-400 text-charcoal-950 shadow-lg shadow-accent-500/30'
                                 : 'bg-charcoal-980/60 text-charcoal-300 border border-charcoal-800 hover:border-charcoal-700'
                             }`}
                           >
@@ -261,7 +261,7 @@ export default function ContactCTA() {
                         placeholder="Describe the issue or what you're looking for..." />
                     </div>
 
-                    <MagneticButton type="submit" disabled={status === 'loading'} className="w-full px-6 py-4 rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-semibold shadow-xl shadow-primary-500/30 hover:shadow-primary-500/60 disabled:opacity-70 border-beam"
+                    <MagneticButton type="submit" disabled={status === 'loading'} className="w-full px-6 py-4 rounded-xl bg-gradient-to-r from-accent-300 to-accent-400 hover:from-accent-200 hover:to-accent-300 text-charcoal-950 font-bold shadow-xl shadow-accent-500/25 hover:shadow-accent-500/50 disabled:opacity-70 border-beam"
                     >
                       {status === 'loading' ? (
                         <><Loader2 className="w-5 h-5 animate-spin" /> Sending...</>

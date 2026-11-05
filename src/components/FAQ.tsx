@@ -22,10 +22,10 @@ function FAQItem({ faq, isOpen, onClick }: { faq: { q: string; a: string }; isOp
   }, [isOpen]);
 
   return (
-    <div className={`glass-titanium rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen ? 'border-primary-500/30' : 'border-white/5'}`}>
+    <div className={`glass-titanium rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen ? 'border-accent-400/40' : 'border-white/5'}`}>
       <button onClick={onClick} className="w-full px-6 py-5 flex items-center justify-between gap-4 text-left group">
-        <span className={`font-display font-bold text-base lg:text-lg transition-colors ${isOpen ? 'text-primary-400' : 'text-white group-hover:text-primary-300'}`}>{faq.q}</span>
-        <div className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 ${isOpen ? 'bg-primary-500 text-white rotate-180' : 'glass-dark text-charcoal-300'}`}>
+        <span className={`font-display font-bold text-base lg:text-lg transition-colors ${isOpen ? 'text-accent-300' : 'text-white group-hover:text-accent-200'}`}>{faq.q}</span>
+        <div className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 ${isOpen ? 'bg-accent-400 text-charcoal-950 rotate-180' : 'glass-dark text-charcoal-300'}`}>
           <ChevronDown className="w-4 h-4" />
         </div>
       </button>
@@ -71,7 +71,7 @@ export default function FAQ() {
                 <p className="text-sm text-charcoal-400 mt-0.5">Our team is ready to help — call us for a free consultation.</p>
               </div>
             </div>
-            <a href="tel:+14692816660" className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-semibold transition-all duration-300 shadow-lg shadow-primary-500/30 hover:shadow-primary-500/50 whitespace-nowrap border-beam">
+            <a href="tel:+14692816660" className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-accent-300 to-accent-400 hover:from-accent-200 hover:to-accent-300 text-charcoal-950 font-bold transition-all duration-300 shadow-lg shadow-accent-500/25 hover:shadow-accent-500/50 whitespace-nowrap border-beam">
               <Phone className="w-5 h-5" /> (469) 281-6660
             </a>
           </div>

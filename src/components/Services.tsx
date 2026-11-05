@@ -63,7 +63,7 @@ export default function Services() {
                           ))}
                         </ul>
                         <div className="mt-5 pt-5 border-t border-charcoal-800/40">
-                          <a href="#contact" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors group/link">
+                          <a href="#contact" className="inline-flex items-center gap-1.5 text-sm font-medium text-accent-300 hover:text-accent-200 transition-colors group/link">
                             Learn More <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                           </a>
                         </div>

@@ -33,7 +33,7 @@
   .grid > *, [class*="flex"] > * {
     min-width: 0;
   }
-  ::selection { @apply bg-primary-500/30 text-white; }
+  ::selection { @apply bg-accent-500/30 text-white; }
 }
 
 @layer utilities {
