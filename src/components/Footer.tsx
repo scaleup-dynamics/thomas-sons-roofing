@@ -118,6 +118,18 @@ export default function Footer() {
                 </div>
                 6289 Independence Pkwy<br />Plano, TX 75023
               </a>
+
+              {/* Balcones Heights Locality badge section */}
+              <div className="mt-6 pt-4 border-t border-charcoal-800/50 rounded-2xl glass-dark p-4 bg-charcoal-975/40">
+                <h5 className="text-xs font-mono font-bold text-accent-300 uppercase tracking-wider mb-2">Balcones Heights Locality</h5>
+                <div className="flex flex-col gap-2">
+                  <img src="https://thomasroofing.pro/plano/media/plano-citywebsiteroofing-0.jpg" alt="City of San Antonio seal" className="w-24 h-24 object-contain mx-auto" />
+                  <img src="https://thomasroofing.pro/plano/media/plano-CityChamberRoofing-0.jpg" alt="San Antonio Chamber of Commerce" className="w-32 h-auto object-contain mx-auto" />
+                </div>
+                <p className="text-[10px] text-charcoal-500 font-mono text-center mt-2">
+                  4466 Fredericksburg Rd, Balcones Heights, TX 78201 &middot; (726) 238-8800
+                </p>
+              </div>
             </div>
           </div>
         </div>
