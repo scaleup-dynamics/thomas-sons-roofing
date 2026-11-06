@@ -5,25 +5,25 @@ import BorderBeam from './BorderBeam';
 
 const testimonials = [
   {
-    name: 'Logan Walker',
-    role: 'Verified Google Review',
+    name: 'Jacqueline Conner',
+    role: 'Verified Google Review · Plano, TX',
     avatar: 'https://images.pexels.com/photos/36819484/pexels-photo-36819484.jpeg?auto=compress&cs=tinysrgb&w=200',
     rating: 5,
-    text: 'I contacted three roofing companies for estimates on a new roof and new gutters, and Thomas & Sons stood out right away. The first two felt too sales focused, but Danny was honest, easy to talk to, and clearly cared about doing the job the right way. He pointed out a few roofing and drainage issues the others missed, which gave me a lot of confidence in the inspection. The crew showed up on time, stayed professional, and completed the roof and gutter work on schedule.'
+    text: 'We have used Thomas & Sons Roofing & Construction twice now for our roofing needs, and each time has been a great experience. Bryan, our roofer, was very knowledgeable and took the time to explain exactly what was going on with our roof. He kept in touch with us throughout the process to make sure all our concerns were addressed. Since our home was remodeled before we bought it, there were some issues left behind…',
   },
   {
-    name: 'Grace Greene',
-    role: 'Verified Google Review',
+    name: 'Bella Dixon',
+    role: 'Verified Google Review · Plano, TX',
     avatar: 'https://images.pexels.com/photos/37842959/pexels-photo-37842959.jpeg?auto=compress&cs=tinysrgb&w=200',
     rating: 5,
-    text: 'Thomas & Sons handled my home roof repair after a large oak tree hit the house, damaged the roofing system, and knocked down the chimney. Danny and the crew stayed on schedule, kept the work within budget, and finished everything with real skill and care. I was especially impressed by how smoothly the tree removal, framing, roofing, masonry, and painting all came together. The roofers explained the process clearly and checked the damaged decking and flashing.'
+    text: 'I was really happy with the roofing service I received. After some heavy rain in Plano, I noticed a water leak coming through my master bedroom ceiling. Bryan worked with my busy schedule and was able to come out the same day. He explained everything clearly and was honest about what needed to be done. Since I don\u2019t know much about roofing, I could have easily thought it was a big issue, but he quickly found the…',
   },
   {
-    name: 'Roger Gill',
-    role: 'Homeowner · Balcones Heights, TX',
+    name: 'Todd',
+    role: 'Verified Google Review · Plano, TX',
     avatar: 'https://images.pexels.com/photos/36707107/pexels-photo-36707107.jpeg?auto=compress&cs=tinysrgb&w=200',
     rating: 5,
-    text: 'I called for a small roof repair and expected it would be worked into the schedule whenever the crew had an opening. To my surprise, Brady and another team member arrived at my home in Balcones Heights just a few hours later since they were already working nearby. They found the issue fast, showed me clear photos of the damaged area, explained the roofing problem in simple terms, and finished the repair in less than 30 minutes.'
+    text: 'Thomas & Sons Roofing & Construction did an excellent job restoring our home after a hail storm in Plano. Todd was easy to work with from the start and carefully inspected the roof, windows, gutters, and downspouts. He pointed out storm damage we had missed and kept us updated throughout the roofing and exterior repairs with regular check-ins. He also rechecked everything, documented the damage clearly, and was at our house during the insurance inspection to help make sure nothing was missed.',
   },
 ];
 

@@ -8,6 +8,7 @@ import Process from './components/Process';
 import Portfolio from './components/Portfolio';
 import WhyUs from './components/WhyUs';
 import Testimonials from './components/Testimonials';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import FAQ from './components/FAQ';
 import ContactCTA from './components/ContactCTA';
 import Estimator from './components/Estimator';
@@ -42,6 +43,7 @@ function App() {
         <WhyUs />
         <Estimator />
         <Testimonials />
+        <PrivacyPolicy />
         <FAQ />
         <ContactCTA />
       </main>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Home, Menu, X, Phone, Mail, Clock, ChevronRight } from 'lucide-react';
+import { Home, Menu, X, Phone, Mail, Clock, ChevronRight, Facebook, Instagram } from 'lucide-react';
 import { site } from '@/config/site';
 
 const navLinks = [
@@ -49,6 +49,18 @@ export default function Header() {
             </span>
             <span className="text-charcoal-600">|</span>
             <span className="text-charcoal-300">Plano &middot; Cedar Hill &middot; Houston &middot; Balcones Heights</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <a href={site.facebookUrl} target="_blank" rel="noopener noreferrer"
+              className="w-7 h-7 rounded-lg glass border border-charcoal-700/50 flex items-center justify-center text-charcoal-300 hover:text-white transition-colors"
+              aria-label="Facebook">
+              <Facebook className="w-3.5 h-3.5" />
+            </a>
+            <a href={site.instagramUrl} target="_blank" rel="noopener noreferrer"
+              className="w-7 h-7 rounded-lg glass border border-charcoal-700/50 flex items-center justify-center text-charcoal-300 hover:text-accent-300 transition-colors"
+              aria-label="Instagram">
+              <Instagram className="w-3.5 h-3.5" />
+            </a>
           </div>
         </div>
       </div>

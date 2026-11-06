@@ -5,7 +5,7 @@ import { site } from '@/config/site';
 const links = {
   Services: ['Residential Roofing', 'Commercial Roofing', 'Roof Repairs', 'Storm Restoration', 'Gutter Systems'],
   Company: ['About Us', 'Our Projects', 'Reviews', 'Process', 'Careers'],
-  Resources: ['Free Inspection', 'Insurance Claims', 'Hail & Storm Damage', 'FAQ', 'Blog'],
+  Resources: ['Free Inspection', 'Insurance Claims', 'Hail & Storm Damage', 'FAQ', 'Privacy Policy', 'Blog'],
 };
 
 export default function Footer() {
@@ -68,7 +68,12 @@ export default function Footer() {
                 aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              {[Instagram, Youtube].map((Icon, i) => (
+              <a href={site.instagramUrl} target="_blank" rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg glass-titanium hover:bg-accent-400 border border-charcoal-700/50 hover:border-accent-400 flex items-center justify-center text-charcoal-300 hover:text-charcoal-950 transition-all duration-300"
+                aria-label="Instagram">
+                <Instagram className="w-5 h-5" />
+              </a>
+              {[Youtube].map((Icon, i) => (
                 <a key={i} href="#"
                   className="w-10 h-10 rounded-lg glass-titanium hover:bg-accent-400 border border-charcoal-700/50 hover:border-accent-400 flex items-center justify-center text-charcoal-300 hover:text-charcoal-950 transition-all duration-300">
                   <Icon className="w-5 h-5" />
@@ -122,7 +127,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Thomas &amp; Sons Roofing &amp; Construction. All rights reserved. &middot; Licensed, Bonded &amp; Insured
           </div>
           <div className="flex items-center gap-6 text-xs text-charcoal-500">
-            <a href="#" className="hover:text-charcoal-300 transition-colors">Privacy Policy</a>
+            <a href="#privacy-policy" className="hover:text-charcoal-300 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-charcoal-300 transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-charcoal-300 transition-colors">Sitemap</a>
           </div>
