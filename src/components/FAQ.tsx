@@ -43,11 +43,11 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="relative py-24 lg:py-32 overflow-hidden">
-      <div className="absolute top-1/4 right-0 w-[400px] h-[400px] rounded-full bg-primary-900/8 blur-[120px]" />
+      <div className="absolute top-1/4 right-0 w-[400px] h-[400px] rounded-full bg-accent-900/8 blur-[120px]" />
 
       <div className="relative w-full mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="text-center mb-12">
-          <span className="text-primary-400 text-sm font-semibold uppercase tracking-widest font-mono">Questions &amp; Answers</span>
+          <span className="text-accent-300 text-sm font-semibold uppercase tracking-widest font-mono">Questions &amp; Answers</span>
           <h2 className="mt-4 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight text-balance">Frequently Asked Questions</h2>
           <p className="mt-4 text-charcoal-400 text-lg">Everything you need to know about working with Thomas &amp; Sons. Still have questions? We're a phone call away.</p>
         </Reveal>
@@ -63,8 +63,8 @@ export default function FAQ() {
         <Reveal delay={200}>
           <div className="mt-10 glass-titanium rounded-2xl border border-white/5 p-6 lg:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl glass border border-primary-500/20 flex items-center justify-center flex-shrink-0">
-                <HelpCircle className="w-7 h-7 text-primary-400" />
+              <div className="w-14 h-14 rounded-2xl glass border border-accent-500/20 flex items-center justify-center flex-shrink-0">
+                <HelpCircle className="w-7 h-7 text-accent-300" />
               </div>
               <div>
                 <h3 className="font-display font-bold text-lg text-white">Still have questions?</h3>

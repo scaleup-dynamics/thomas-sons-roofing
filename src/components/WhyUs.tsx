@@ -25,11 +25,11 @@ function StatCard({ stat, start }: { stat: (typeof stats)[number]; start: boolea
   const Icon = stat.icon;
   return (
     <div className="text-center group">
-      <div className="w-16 h-16 mx-auto rounded-2xl glass-titanium border border-primary-500/20 flex items-center justify-center mb-4 group-hover:border-primary-500/40 group-hover:scale-110 transition-all duration-300">
-        <Icon className="w-8 h-8 text-primary-400" />
+      <div className="w-16 h-16 mx-auto rounded-2xl glass-titanium border border-accent-500/20 flex items-center justify-center mb-4 group-hover:border-accent-400/40 group-hover:scale-110 transition-all duration-300">
+        <Icon className="w-8 h-8 text-accent-300" />
       </div>
       <div className="font-display font-extrabold text-3xl lg:text-4xl text-white">
-        {value}<span className="text-primary-400">{stat.suffix}</span>
+        {value}<span className="text-accent-300">{stat.suffix}</span>
       </div>
       <div className="text-sm text-charcoal-400 mt-1">{stat.label}</div>
     </div>
@@ -53,7 +53,7 @@ export default function WhyUs() {
 
   return (
     <section id="why-us" className="relative py-24 lg:py-32 overflow-hidden">
-      <div className="absolute top-1/2 left-0 w-[600px] h-[600px] -translate-y-1/2 rounded-full bg-primary-900/8 blur-[150px]" />
+      <div className="absolute top-1/2 left-0 w-[600px] h-[600px] -translate-y-1/2 rounded-full bg-accent-900/8 blur-[150px]" />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-accent-600/5 blur-[120px]" />
 
       <div className="relative w-full mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,12 +70,12 @@ export default function WhyUs() {
                     alt="Roofing professionals at work" className="w-full h-[500px] object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-975/60 to-transparent" />
                 </div>
-                <div className="absolute -bottom-4 right-2 sm:-bottom-6 sm:-right-6 rounded-2xl p-6 shadow-2xl bg-gradient-to-br from-primary-500 to-primary-700 border border-primary-400/30 animate-glow">
+                <div className="absolute -bottom-4 right-2 sm:-bottom-6 sm:-right-6 rounded-2xl p-6 shadow-2xl bg-gradient-to-br from-accent-500 to-accent-700 border border-accent-400/30 animate-glow">
                   <div className="text-5xl font-display font-extrabold text-white">4.9★</div>
                   <div className="text-sm text-white/80 font-medium mt-1">80+ Google Reviews</div>
                 </div>
                 <div className="absolute -top-4 left-2 sm:-top-5 sm:-left-5 glass-titanium rounded-2xl p-4 max-w-[200px] shadow-xl border border-white/10 animate-float">
-                  <Quote className="w-5 h-5 text-primary-400 mb-2" />
+                  <Quote className="w-5 h-5 text-accent-300 mb-2" />
                   <p className="text-xs text-charcoal-300 leading-relaxed italic">"Danny was honest, easy to talk to, and clearly cared about doing the job the right way."</p>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function WhyUs() {
 
           <div>
             <Reveal>
-              <span className="text-primary-400 text-sm font-semibold uppercase tracking-widest font-mono">Why Choose Us</span>
+              <span className="text-accent-300 text-sm font-semibold uppercase tracking-widest font-mono">Why Choose Us</span>
               <h2 className="mt-4 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight text-balance">Built on Trust, Backed by Results</h2>
             </Reveal>
 
@@ -92,8 +92,8 @@ export default function WhyUs() {
               {reasons.map((reason, i) => (
                 <Reveal key={reason.title} delay={i * 100}>
                   <div className="flex gap-4 group">
-                    <div className="flex-shrink-0 w-11 h-11 rounded-xl glass-titanium border border-primary-500/20 flex items-center justify-center group-hover:bg-primary-500/20 group-hover:scale-110 transition-all duration-300">
-                      <CheckCircle2 className="w-5 h-5 text-primary-400" />
+                    <div className="flex-shrink-0 w-11 h-11 rounded-xl glass-titanium border border-accent-500/20 flex items-center justify-center group-hover:bg-accent-500/20 group-hover:border-accent-400/50 transition-all duration-300">
+                      <CheckCircle2 className="w-5 h-5 text-accent-300" />
                     </div>
                     <div>
                       <h3 className="font-display font-bold text-lg text-white mb-1">{reason.title}</h3>
@@ -109,7 +109,7 @@ export default function WhyUs() {
                 <p className="text-xs text-charcoal-500 uppercase tracking-wider mb-3 font-mono">Credentials &amp; Commitments</p>
                 <div className="flex flex-wrap gap-3">
                   {certifications.map((cert) => (
-                    <span key={cert} className="px-4 py-2 rounded-xl glass border border-charcoal-700/50 text-sm text-charcoal-300 font-medium hover:border-primary-500/30 hover:text-white transition-all">{cert}</span>
+                    <span key={cert} className="px-4 py-2 rounded-xl glass border border-charcoal-700/50 text-sm text-charcoal-300 font-medium hover:border-accent-400/50 hover:text-accent-300 transition-all">{cert}</span>
                   ))}
                 </div>
               </div>

@@ -86,19 +86,19 @@ export default function ContactCTA() {
   };
 
   const inputClass =
-    'w-full px-4 py-3.5 rounded-xl bg-charcoal-980/60 border border-charcoal-800 text-white placeholder-charcoal-500 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 focus:shadow-[0_0_20px_rgba(11,138,240,0.15)] transition-all duration-300';
+    'w-full px-4 py-3.5 rounded-xl bg-charcoal-980/60 border border-charcoal-800 text-white placeholder-charcoal-500 focus:outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-400/30 focus:shadow-[0_0_20px_rgba(243,161,21,0.15)] transition-all duration-300';
 
   return (
     <section id="contact" className="relative py-24 lg:py-32 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal-980/0 via-primary-950/10 to-charcoal-980/0" />
-      <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-primary-700/8 blur-[160px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal-980/0 via-accent-950/10 to-charcoal-980/0" />
+      <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-accent-700/8 blur-[160px]" />
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-accent-600/5 blur-[120px]" />
 
       <div className="relative w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left: Copy + Info */}
           <Reveal className="reveal-left">
-            <span className="text-primary-400 text-sm font-semibold uppercase tracking-widest font-mono">
+            <span className="text-accent-300 text-sm font-semibold uppercase tracking-widest font-mono">
               Get Started Today
             </span>
             <h2 className="mt-4 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight text-balance">
@@ -123,8 +123,8 @@ export default function ContactCTA() {
                 'Insurance claim assistance available',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3 group">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-lg glass-titanium border border-primary-500/20 flex items-center justify-center group-hover:bg-primary-500/25 transition-colors">
-                    <CheckCircle2 className="w-4 h-4 text-primary-400" />
+                  <div className="flex-shrink-0 w-6 h-6 rounded-lg glass-titanium border border-accent-500/20 flex items-center justify-center group-hover:bg-accent-500/25 transition-colors">
+                    <CheckCircle2 className="w-4 h-4 text-accent-300" />
                   </div>
                   <span className="text-charcoal-300">{item}</span>
                 </div>
@@ -158,7 +158,7 @@ export default function ContactCTA() {
                 </div>
                 <div className="text-xs text-charcoal-500 uppercase tracking-wider font-mono flex items-center justify-between">
                   <span>Service Area / Location</span>
-                  <span className="text-[10px] text-primary-400 group-hover:underline">View Map &rarr;</span>
+                  <span className="text-[10px] text-accent-300 group-hover:underline">View Map &rarr;</span>
                 </div>
                 <div className="text-white font-semibold mt-0.5">{site.serviceArea}</div>
               </a>

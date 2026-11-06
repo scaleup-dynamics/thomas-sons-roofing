@@ -43,7 +43,7 @@ export default function TiltCard({ children, className = '', max = 5 }: Props) {
     >
       <div
         data-glow
-        className="absolute w-48 h-48 rounded-full bg-primary-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
+        className="absolute w-48 h-48 rounded-full bg-accent-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
       />
       {children}
     </div>

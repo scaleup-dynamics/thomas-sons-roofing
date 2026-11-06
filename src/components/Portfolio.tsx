@@ -36,11 +36,11 @@ export default function Portfolio() {
 
   return (
     <section id="projects" className="relative py-24 lg:py-32 bg-charcoal-975/50 overflow-hidden">
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-primary-800/8 blur-[120px]" />
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-accent-800/8 blur-[120px]" />
 
       <div className="relative w-full mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-primary-400 text-sm font-semibold uppercase tracking-widest font-mono">Our Work</span>
+          <span className="text-accent-300 text-sm font-semibold uppercase tracking-widest font-mono">Our Work</span>
           <h2 className="mt-4 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight text-balance">Projects That Speak for Themselves</h2>
           <p className="mt-4 text-charcoal-400 text-lg">Browse a selection of our recent roofing installations and replacements across residential and commercial properties.</p>
         </Reveal>
@@ -84,7 +84,7 @@ export default function Portfolio() {
             <Reveal key={project.title} delay={i * 60}>
               <TiltCard max={4}>
                 <div onClick={() => setLightbox(i)}
-                  className="group relative rounded-2xl overflow-hidden cursor-pointer glass-titanium border border-white/5 hover:border-primary-500/20 transition-all duration-400"
+                  className="group relative rounded-2xl overflow-hidden cursor-pointer glass-titanium border border-white/5 hover:border-accent-400/30 transition-all duration-400"
                 >
                   <div className="aspect-[4/3] overflow-hidden">
                     <img src={project.image} alt={project.title}
@@ -92,18 +92,18 @@ export default function Portfolio() {
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-975 via-charcoal-975/30 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-300" />
                   <div className="absolute top-4 left-4">
-                    <span className={`px-3 py-1.5 rounded-full text-xs font-semibold backdrop-blur-md ${project.category === 'Commercial' ? 'bg-accent-500/80 text-white' : 'bg-primary-500/80 text-white'}`}>{project.category}</span>
+                    <span className={`px-3 py-1.5 rounded-full text-xs font-semibold backdrop-blur-md ${project.category === 'Commercial' ? 'bg-accent-500/80 text-white' : 'bg-accent-500/80 text-white'}`}>{project.category}</span>
                   </div>
                   <div className="absolute top-4 right-4 flex items-center gap-1.5 px-2.5 py-1 rounded-full glass-dark text-xs text-white font-mono">
                     <Calendar className="w-3 h-3" /> {project.duration}
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <div className="flex items-center gap-1.5 text-charcoal-300 text-xs mb-2 font-mono"><MapPin className="w-3.5 h-3.5 text-primary-400" />{project.location.includes(',') ? `${project.location.split(',')[0]}, ${site.state || 'OR'}` : `${project.location}, ${site.city}`}</div>
+                    <div className="flex items-center gap-1.5 text-charcoal-300 text-xs mb-2 font-mono"><MapPin className="w-3.5 h-3.5 text-accent-300" />{project.location.includes(',') ? `${project.location.split(',')[0]}, ${site.state || 'OR'}` : `${project.location}, ${site.city}`}</div>
                     <h3 className="font-display font-bold text-lg text-white mb-1">{project.title}</h3>
                     <p className="text-sm text-charcoal-300 max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-500 leading-relaxed">{project.detail}</p>
                     <div className="mt-3 flex items-center justify-between">
                       <span className="text-xs text-charcoal-400 font-mono">{project.size}</span>
-                      <span className="text-primary-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">View Project &rarr;</span>
+                      <span className="text-accent-300 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">View Project &rarr;</span>
                     </div>
                   </div>
                 </div>
@@ -132,14 +132,14 @@ export default function Portfolio() {
               {xrayMode && (
                 <div className="absolute inset-0 pointer-events-none">
                   {/* Scan line */}
-                  <div className="absolute left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary-400 to-transparent animate-scan shadow-[0_0_20px_rgba(63,171,255,0.8)]" />
+                  <div className="absolute left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-400 to-transparent animate-scan shadow-[0_0_20px_rgba(243,161,21,0.8)]" />
                   {/* Blueprint grid */}
                   <div className="absolute inset-0 opacity-30" style={{
                     backgroundImage: 'linear-gradient(rgba(63,171,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(63,171,255,0.3) 1px, transparent 1px)',
                     backgroundSize: '40px 40px',
                   }} />
                   {/* Blueprint annotations */}
-                  <div className="absolute top-[20%] left-[10%] flex items-center gap-2 text-xs font-mono text-primary-300">
+                  <div className="absolute top-[20%] left-[10%] flex items-center gap-2 text-xs font-mono text-accent-300">
                     <ScanLine className="w-4 h-4" />
                     <span className="glass-dark px-2 py-0.5 rounded">STRUCTURAL LAYER</span>
                   </div>
@@ -177,13 +177,13 @@ export default function Portfolio() {
 
             <div className="p-4 sm:p-6 md:p-8">
               <div className="flex items-center gap-3 mb-3">
-                <span className={`px-3 py-1 rounded-full text-xs font-semibold ${filtered[lightbox].category === 'Commercial' ? 'bg-accent-500 text-white' : 'bg-primary-500 text-white'}`}>{filtered[lightbox].category}</span>
+                <span className={`px-3 py-1 rounded-full text-xs font-semibold ${filtered[lightbox].category === 'Commercial' ? 'bg-accent-500 text-white' : 'bg-accent-500 text-white'}`}>{filtered[lightbox].category}</span>
                 <span className="flex items-center gap-1.5 text-sm text-charcoal-400 font-mono"><MapPin className="w-3.5 h-3.5" />{filtered[lightbox].location}</span>
               </div>
               <h3 className="font-display font-bold text-2xl text-white mb-2">{filtered[lightbox].title}</h3>
               <p className="text-charcoal-300 leading-relaxed mb-4">{filtered[lightbox].detail}</p>
               <div className="flex items-center gap-6 text-sm font-mono">
-                <div className="flex items-center gap-2 text-charcoal-400"><span className="w-2 h-2 rounded-full bg-primary-400" />{filtered[lightbox].size}</div>
+                <div className="flex items-center gap-2 text-charcoal-400"><span className="w-2 h-2 rounded-full bg-accent-300" />{filtered[lightbox].size}</div>
                 <div className="flex items-center gap-2 text-charcoal-400"><Calendar className="w-4 h-4" />{filtered[lightbox].duration}</div>
               </div>
             </div>

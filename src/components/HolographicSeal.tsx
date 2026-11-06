@@ -13,12 +13,12 @@ export default function HolographicSeal({ label = '100% FREE', sub = 'No Obligat
         </div>
         {/* Scan line */}
         <div className="absolute inset-[2px] rounded-full overflow-hidden pointer-events-none">
-          <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-400 to-transparent animate-scan" />
+          <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-400 to-transparent animate-scan" />
         </div>
       </div>
       {/* Hologram text */}
       <div className="flex flex-col leading-tight">
-        <span className="text-xs font-mono text-primary-300 tracking-wider animate-hologram">VERIFIED SEAL</span>
+        <span className="text-xs font-mono text-accent-300 tracking-wider animate-hologram">VERIFIED SEAL</span>
         <span className="text-[10px] text-charcoal-500 font-mono">SECURED · ENCRYPTED</span>
       </div>
     </div>

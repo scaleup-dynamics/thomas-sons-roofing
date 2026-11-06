@@ -56,7 +56,7 @@ export default function Process() {
 
       <div className="relative w-full mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-primary-400 text-sm font-semibold uppercase tracking-widest font-mono">How It Works</span>
+          <span className="text-accent-300 text-sm font-semibold uppercase tracking-widest font-mono">How It Works</span>
           <h2 className="mt-4 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight text-balance">
             Our Proven 5-Step Process
           </h2>

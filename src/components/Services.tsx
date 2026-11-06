@@ -17,11 +17,11 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="relative py-24 lg:py-32 overflow-hidden">
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-primary-900/8 blur-[120px]" />
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-accent-900/8 blur-[120px]" />
 
       <div className="relative w-full mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-primary-400 text-sm font-semibold uppercase tracking-widest font-mono">What We Do</span>
+          <span className="text-accent-300 text-sm font-semibold uppercase tracking-widest font-mono">What We Do</span>
           <h2 className="mt-4 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight text-balance">
             Complete Roofing Solutions for Every Property
           </h2>
@@ -37,27 +37,27 @@ export default function Services() {
               <Reveal key={service.title} delay={i * 80}>
                 <TiltCard max={5}>
                   <BorderBeam className="rounded-2xl">
-                    <div className="relative glass-titanium rounded-2xl overflow-hidden h-full border border-white/5 hover:border-primary-500/20 transition-colors duration-400">
+                    <div className="relative glass-titanium rounded-2xl overflow-hidden h-full border border-white/5 hover:border-accent-400/30 transition-colors duration-400">
                       <div className="relative h-40 overflow-hidden">
                         <img src={service.image} alt={service.title}
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900 via-charcoal-900/40 to-transparent" />
                         <div className="absolute -bottom-7 left-6">
-                          <div className="w-14 h-14 rounded-2xl glass-dark border border-primary-500/30 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:border-primary-500/50 transition-all duration-300">
-                            <Icon className="w-7 h-7 text-primary-400" strokeWidth={2} />
+                          <div className="w-14 h-14 rounded-2xl glass-dark border border-accent-500/30 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:border-accent-400/50 transition-all duration-300">
+                            <Icon className="w-7 h-7 text-accent-300" strokeWidth={2} />
                           </div>
                         </div>
                       </div>
                       <div className="p-7 pt-10">
                         <div className="flex items-center justify-between mb-3">
                           <h3 className="font-display font-bold text-xl text-white">{service.title}</h3>
-                          <span className="text-xs font-mono font-bold text-charcoal-600 group-hover:text-primary-400 transition-colors">0{i + 1}</span>
+                          <span className="text-xs font-mono font-bold text-charcoal-600 group-hover:text-accent-300 transition-colors">0{i + 1}</span>
                         </div>
                         <p className="text-charcoal-400 text-sm leading-relaxed mb-5">{service.description}</p>
                         <ul className="space-y-2.5">
                           {service.features.map((feature) => (
                             <li key={feature} className="flex items-center gap-2.5 text-sm text-charcoal-300">
-                              <span className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0" />
+                              <span className="w-1.5 h-1.5 rounded-full bg-accent-300 flex-shrink-0" />
                               {feature}
                             </li>
                           ))}

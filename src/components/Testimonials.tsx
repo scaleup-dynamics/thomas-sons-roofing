@@ -47,11 +47,11 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="relative py-24 lg:py-32 bg-charcoal-975/50 overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-accent-600/8 blur-[130px]" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-primary-700/8 blur-[120px]" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-accent-700/8 blur-[120px]" />
 
       <div className="relative w-full mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="text-center mb-12">
-          <span className="text-primary-400 text-sm font-semibold uppercase tracking-widest font-mono">Client Reviews</span>
+          <span className="text-accent-300 text-sm font-semibold uppercase tracking-widest font-mono">Client Reviews</span>
           <h2 className="mt-4 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight text-balance">What Our Customers Say</h2>
           <div className="mt-5 inline-flex items-center gap-3">
             <div className="flex">{[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 text-accent-400 fill-accent-400" />)}</div>
@@ -70,7 +70,7 @@ export default function Testimonials() {
               <div className="absolute top-0 left-0 right-0 h-px neon-line" />
 
               <div className="absolute top-0 left-0 right-0 h-1 bg-charcoal-800/40">
-                <div className="h-full bg-gradient-to-r from-primary-400 to-accent-400 transition-all duration-300" style={{ width: `${((active + 1) / testimonials.length) * 100}%` }} />
+                <div className="h-full bg-gradient-to-r from-accent-300 to-accent-500 transition-all duration-300" style={{ width: `${((active + 1) / testimonials.length) * 100}%` }} />
               </div>
 
               <div key={fadeKey} className="animate-fade-in">
@@ -80,7 +80,7 @@ export default function Testimonials() {
                 <div className="flex items-center gap-4">
                   <div className="relative">
                     <img src={testimonials[active].avatar} alt={testimonials[active].name}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-primary-500/40" loading="lazy" />
+                      className="w-16 h-16 rounded-full object-cover border-2 border-accent-400/40" loading="lazy" />
                     <div className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-success-500 border-2 border-charcoal-900 flex items-center justify-center">
                       <ShieldCheck className="w-3.5 h-3.5 text-white" />
                     </div>

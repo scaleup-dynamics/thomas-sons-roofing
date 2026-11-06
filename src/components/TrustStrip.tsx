@@ -28,7 +28,7 @@ export default function TrustStrip() {
                   <div className="absolute inset-0 rounded-xl bg-success-500/20 animate-ripple" />
                   <div className="absolute inset-0 rounded-xl bg-success-500/10 animate-ripple" style={{ animationDelay: '0.5s' }} />
                   <div className="relative w-12 h-12 rounded-xl glass-titanium border border-charcoal-700/50 flex items-center justify-center group-hover:border-success-500/40 group-hover:scale-110 transition-all duration-300">
-                    <Icon className="w-6 h-6 text-primary-400" />
+                    <Icon className="w-6 h-6 text-accent-300" />
                   </div>
                 </div>
                 <span className="text-xs font-medium text-charcoal-400 group-hover:text-charcoal-200 transition-colors">{badge.label}</span>
